@@ -1,0 +1,38 @@
+
+
+  .content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .input-keylog {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.164);
+    min-width: 100%;
+    margin: 20px;
+  }
+
+  .container-result {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(46, 165, 42, 0.171);
+  }
+
+  .content-example {
+    background: #b1b1b157;
+    border: solid 1px black;
+    padding: 15px;
+    font-size: 35px;
+    font-style: italic;
+  }
+
+  .example-typed {
+    background-color: greenyellow;
+  }

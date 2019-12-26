@@ -1,0 +1,27 @@
+<!-- asd -->
+
+
+<div class="content" role="main">
+    <div class="content-example">
+        <span class="example-typed">{{exampleTyped}}</span>
+        <span class="example-untyped">{{exampleUntyped}}</span>
+    </div>
+    <textarea matInput class="input-keylog"
+        [(ngModel)]="textTyped"
+        (ngModelChange)="onTexChange()"
+        (keydown)="onKeyDown($event)"
+        (keyup)="onKeyUp($event)"
+        cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="10"
+        cdkAutosizeMaxRows="30"></textarea>
+    <button (click)="showData()">Check Result</button>
+    <div *ngIf="submited" class="container-result">
+        Total press time: {{results.totalPressTime | number:'1.3-4'}} s <br>
+        Average press time: {{results.averagePressTime | number:'1.3-4'}} s <br>
+        Average time berween down: {{results.averagebetweenDownTime | number:'1.3-4'}} s <br>
+        Average time berween up: {{results.averagebetweenUpTime | number:'1.3-4'}} s <br>
+        Key count: {{results.keyCount}} keys <br>
+        Average speed: {{results.averageSpeed | number:'1.3-4'}} key/s <br>
+        Error count: {{results.errorCount}} keys <br>
+    </div>
+</div>

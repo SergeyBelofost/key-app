@@ -1,0 +1,33 @@
+.text-link {
+    margin: 20px;
+    background: #96969663;
+    border: solid 1px #1f1f1f;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.password-link {
+    margin: 20px;
+    background: #96969663;
+    border: solid 1px #1f1f1f;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.link-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
